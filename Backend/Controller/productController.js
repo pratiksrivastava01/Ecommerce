@@ -13,8 +13,8 @@ const createProduct = async (req, res, next) => {
 };
 
 // Get all products
-const getallProducts = (req, res) => {
-  const products = Product.find();
+const getallProducts = async(req, res) => {
+  const products = await Product.find();
 
   res.status(200).json({
     success: true,

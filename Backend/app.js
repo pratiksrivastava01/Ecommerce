@@ -9,7 +9,7 @@ import productRoutes from "./Routes/productRoute.js";
 
 // Use Routes
 app.use("/api/v1", productRoutes);
-app.use("/api/v1", user)
+// app.use("/api/v1", user)
 
 // Error Handler (Should be last piece of middleware)
 app.use(errorMiddleware);
