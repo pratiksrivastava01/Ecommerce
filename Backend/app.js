@@ -6,10 +6,11 @@ app.use(express.json());
 
 // Import all routes
 import productRoutes from "./Routes/productRoute.js";
+import order from "./Routes/orderRoute.js";
 
 // Use Routes
 app.use("/api/v1", productRoutes);
-// app.use("/api/v1", user)
+app.use("/api/v1", order)
 
 // Error Handler (Should be last piece of middleware)
 app.use(errorMiddleware);
